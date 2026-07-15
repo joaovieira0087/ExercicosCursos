@@ -14,8 +14,7 @@ Console.WriteLine($"SOMA = {num1 + num2} ");
 double raio = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
 double tt = 3.14159;
-double area = tt * (raio * raio);
-
+double area = tt * (raio * r().Split(' ')
 Console.WriteLine($"A = {area.ToString("f4", CultureInfo.InvariantCulture)}");
 */
 
@@ -40,6 +39,22 @@ double Sala =  HoTra * ValoHor;
 Console.WriteLine($"NUMBER = {numFun}");
 Console.WriteLine($"SALARY = {Sala.ToString("F2", CultureInfo.InvariantCulture)}");
 */
+
+string[] peca = Console.ReadLine().Split(' ');
+string[] peca2 = Console.ReadLine().Split(' ');
+
+int quant1 = int.Parse(peca[1]);
+double valo1 = double.Parse(peca[2], CultureInfo.InvariantCulture);
+double soma1 = quant1 * valo1;
+
+
+int quant2 = int.Parse(peca2[1]);
+double valo2 = double.Parse(peca2[2], CultureInfo.InvariantCulture);
+double soma2 = quant2 * valo2;
+
+double total = soma1 + soma2;
+
+Console.WriteLine($"VALOR A PAGAR: R$ {total.ToString("F2", CultureInfo.InvariantCulture)}");
 
 
 
