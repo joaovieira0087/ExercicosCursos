@@ -1,0 +1,15 @@
+C:\Users\jovie\source\repos\exercicios_propostos\ExerciciosPropostos\bin\Debug\net10.0\ExerciciosPropostos.exe
+C:\Users\jovie\source\repos\exercicios_propostos\ExerciciosPropostos\bin\Debug\net10.0\ExerciciosPropostos.deps.json
+C:\Users\jovie\source\repos\exercicios_propostos\ExerciciosPropostos\bin\Debug\net10.0\ExerciciosPropostos.runtimeconfig.json
+C:\Users\jovie\source\repos\exercicios_propostos\ExerciciosPropostos\bin\Debug\net10.0\ExerciciosPropostos.dll
+C:\Users\jovie\source\repos\exercicios_propostos\ExerciciosPropostos\bin\Debug\net10.0\ExerciciosPropostos.pdb
+C:\Users\jovie\source\repos\exercicios_propostos\ExerciciosPropostos\obj\Debug\net10.0\ExerciciosPropostos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jovie\source\repos\exercicios_propostos\ExerciciosPropostos\obj\Debug\net10.0\ExerciciosPropostos.AssemblyInfoInputs.cache
+C:\Users\jovie\source\repos\exercicios_propostos\ExerciciosPropostos\obj\Debug\net10.0\ExerciciosPropostos.AssemblyInfo.cs
+C:\Users\jovie\source\repos\exercicios_propostos\ExerciciosPropostos\obj\Debug\net10.0\ExerciciosPropostos.csproj.CoreCompileInputs.cache
+C:\Users\jovie\source\repos\exercicios_propostos\ExerciciosPropostos\obj\Debug\net10.0\ExerciciosPropostos.sourcelink.json
+C:\Users\jovie\source\repos\exercicios_propostos\ExerciciosPropostos\obj\Debug\net10.0\ExerciciosPropostos.dll
+C:\Users\jovie\source\repos\exercicios_propostos\ExerciciosPropostos\obj\Debug\net10.0\refint\ExerciciosPropostos.dll
+C:\Users\jovie\source\repos\exercicios_propostos\ExerciciosPropostos\obj\Debug\net10.0\ExerciciosPropostos.pdb
+C:\Users\jovie\source\repos\exercicios_propostos\ExerciciosPropostos\obj\Debug\net10.0\ExerciciosPropostos.genruntimeconfig.cache
+C:\Users\jovie\source\repos\exercicios_propostos\ExerciciosPropostos\obj\Debug\net10.0\ref\ExerciciosPropostos.dll
