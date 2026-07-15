@@ -19,6 +19,7 @@ double area = tt * (raio * raio);
 Console.WriteLine($"A = {area.ToString("f4", CultureInfo.InvariantCulture)}");
 */
 
+/*
 int v1 = int.Parse(Console.ReadLine());
 int v2 = int.Parse(Console.ReadLine());
 int v3 = int.Parse(Console.ReadLine());
@@ -27,7 +28,18 @@ int v4 = int.Parse(Console.ReadLine());
 int diferenca = (v1 * v2) - (v3 * v4);
 
 Console.WriteLine($"DIFERENCA = {diferenca}");
+*/
 
+/*
+int numFun = int.Parse(Console.ReadLine());
+int HoTra = int.Parse(Console.ReadLine());
+double ValoHor = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+double Sala =  HoTra * ValoHor;
+
+Console.WriteLine($"NUMBER = {numFun}");
+Console.WriteLine($"SALARY = {Sala.ToString("F2", CultureInfo.InvariantCulture)}");
+*/
 
 
 
