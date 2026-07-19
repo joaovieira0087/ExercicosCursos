@@ -90,6 +90,7 @@ if (numero % 2 == 0)
     Console.WriteLine("impar");
 */
 
+/*
 Console.WriteLine("QUAL HORARIO ATUAL");
 int hora = int.Parse(Console.ReadLine());
 
@@ -101,8 +102,18 @@ if (hora < 12)
 
 else
     Console.WriteLine("boa noite");
+*/
 
+//DESCONTO
 
+double preco = double.Parse(Console.ReadLine());
+double desconto = 0.0;
+
+if (preco > 100.00){
+    desconto = preco * 0.1;
+}
+
+Console.WriteLine(desconto);
 
 
 
