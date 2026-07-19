@@ -56,6 +56,7 @@ double total = quant1 * valo1 + quant2 * valo2;
 Console.WriteLine($"VALOR A PAGAR: R$ {total.ToString("F2", CultureInfo.InvariantCulture)}");
 */
 
+/*
 string[] valor1 = (Console.ReadLine().Split(' '));
 
 // area do triangulo
@@ -75,6 +76,17 @@ Console.WriteLine("CIRCULO: " + circulo.ToString("F3" , CultureInfo.InvariantCul
 Console.WriteLine("TRAPEZIO: " + trapezio.ToString("F3" , CultureInfo.InvariantCulture));
 Console.WriteLine("QUADRADO: " + quadrado.ToString("F3" , CultureInfo.InvariantCulture));
 Console.WriteLine("RETANGULO: " + retangulo.ToString("F3" , CultureInfo.InvariantCulture));
+*/
+
+Console.WriteLine("digite um numero");
+int numero = int.Parse(Console.ReadLine());
+
+if (numero % 2 == 0)
+    {
+        Console.WriteLine("par");
+    }
+    else
+    Console.WriteLine("impar");
 
 
 
