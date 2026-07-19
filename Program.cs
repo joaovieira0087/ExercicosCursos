@@ -78,6 +78,7 @@ Console.WriteLine("QUADRADO: " + quadrado.ToString("F3" , CultureInfo.InvariantC
 Console.WriteLine("RETANGULO: " + retangulo.ToString("F3" , CultureInfo.InvariantCulture));
 */
 
+/*
 Console.WriteLine("digite um numero");
 int numero = int.Parse(Console.ReadLine());
 
@@ -87,6 +88,20 @@ if (numero % 2 == 0)
     }
     else
     Console.WriteLine("impar");
+*/
+
+Console.WriteLine("QUAL HORARIO ATUAL");
+int hora = int.Parse(Console.ReadLine());
+
+if (hora < 12) 
+    Console.WriteLine("bom dia");
+
+ else if (hora < 18)
+    Console.WriteLine("boa tarde");
+
+else
+    Console.WriteLine("boa noite");
+
 
 
 
