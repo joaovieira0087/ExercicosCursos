@@ -104,8 +104,9 @@ else
     Console.WriteLine("boa noite");
 */
 
-//DESCONTO
 
+//DESCONTO
+/*
 double preco = double.Parse(Console.ReadLine());
 double desconto = 0.0;
 
@@ -114,6 +115,20 @@ if (preco > 100.00){
 }
 
 Console.WriteLine(desconto);
+*/
 
+/* NUMERO POSITIVO NEGATIVO 
+Console.Write("digite um numero: ");
+int numero = int.Parse(Console.ReadLine());
+
+if (numero > 0)
+    {
+        Console.WriteLine("POSITIVO");
+    }
+else
+    {
+        Console.WriteLine("NEGATIVO");
+    }
+*/
 
 
