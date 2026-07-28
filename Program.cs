@@ -158,4 +158,17 @@ else
     Console.WriteLine("Nao sao Multiplos");
 */
 
+/*
+string[] vet = Console.ReadLine().Split( );
 
+int num1 = int.Parse(vet[0]);
+int num2 = int.Parse(vet[1]);
+int duracao = 0;
+
+if(num1 < num2){
+     duracao = num2 - num1;
+}
+else duracao = 24 - num1 + num2;
+
+Console.WriteLine($"O JOGO DUROU {duracao} HORA(s)");
+*/
