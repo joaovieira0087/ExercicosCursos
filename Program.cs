@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using System;
 // estrutura sequencial
 
 /* 
@@ -172,3 +173,39 @@ else duracao = 24 - num1 + num2;
 
 Console.WriteLine($"O JOGO DUROU {duracao} HORA(s)");
 */
+
+namespace MeuProjetoConsole
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("digite um numero");
+            int numero1 = int.Parse(Console.ReadLine());
+            int numero2 = int.Parse(Console.ReadLine());
+            int numero3 = int.Parse(Console.ReadLine());
+
+            int resultado = Maior(numero1, numero2, numero3);
+            Console.WriteLine($"MAIOR {resultado}");
+        }
+
+        static int Maior(int n1,int n2,int n3)
+        {
+            int m = 0;
+
+            if (n1 > n2 && n1 < n3)
+            {
+                m = n1;
+            }
+            else if (n2 > n3)
+            {
+                m = n2;
+            }
+            else 
+                m = n3;
+
+            return m;
+        }
+    }
+}
+
