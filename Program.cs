@@ -172,3 +172,16 @@ else duracao = 24 - num1 + num2;
 
 Console.WriteLine($"O JOGO DUROU {duracao} HORA(s)");
 */
+
+string[] vet = Console.ReadLine().Split(' ');
+
+int Codi = int.Parse(vet[0]);
+int Quanti = int.Parse(vet[1]);
+int total = 0;
+
+if(Codi == 1)
+{
+    int valor = 4;
+    total = valor * Quanti;
+    Console.WriteLine($"TOTAL: R$ {total.ToString("f2", CultureInfo.InstalledUICulture)}");
+}
