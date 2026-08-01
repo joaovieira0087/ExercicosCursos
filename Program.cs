@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using System;
 // estrutura sequencial
 
 /* 
@@ -173,15 +174,86 @@ else duracao = 24 - num1 + num2;
 Console.WriteLine($"O JOGO DUROU {duracao} HORA(s)");
 */
 
+//namespace MeuProjetoConsole
+//{
+//    class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.WriteLine("digite um numero");
+//            int numero1 = int.Parse(Console.ReadLine());
+//            int numero2 = int.Parse(Console.ReadLine());
+//            int numero3 = int.Parse(Console.ReadLine());
+
+//            int resultado = Maior(numero1, numero2, numero3);
+//            Console.WriteLine($"MAIOR {resultado}");
+//        }
+
+//        static int Maior(int n1,int n2,int n3)
+//        {
+//            int m = 0;
+
+//            if (n1 > n2 && n1 < n3)
+//            {
+//                m = n1;
+//            }
+//            else if (n2 > n3)
+//            {
+//                m = n2;
+//            }
+//            else 
+//                m = n3;
+
+//            return m;
+//        }
+//    }
+//}
+
+/*
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("digite um numero");
+            double x = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+           
+
+            while(x >= 0.0 )
+            {
+                double rais = Math.Sqrt(x);
+                Console.WriteLine($"RAIZ QUADRADA = {rais.ToString("F3", CultureInfo.InvariantCulture)}");
+                Console.WriteLine("digite um numero");
+                x = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            }
+
+            Console.WriteLine("NUMERO NEGATIVO");
+
+        }
+    }
+*/
+
 string[] vet = Console.ReadLine().Split(' ');
 
-int Codi = int.Parse(vet[0]);
-int Quanti = int.Parse(vet[1]);
-int total = 0;
+int Codi = int.Parse(vet[0], CultureInfo.InvariantCulture);
+int Quanti = int.Parse(vet[1], CultureInfo.InvariantCulture);
+double total = 0;
 
-if(Codi == 1)
-{
-    int valor = 4;
-    total = valor * Quanti;
-    Console.WriteLine($"TOTAL: R$ {total.ToString("f2", CultureInfo.InstalledUICulture)}");
-}
+
+            if (Codi == 1) {
+                total = Quanti * 4.0;
+            }
+            else if (Codi == 2) {
+                total = Quanti * 4.5;
+            }
+            else if (Codi == 3) {
+                total = Quanti * 5.0;
+            }
+            else if (Codi == 4) {
+                total = Quanti * 2.0;
+            }
+            else {
+                total = Quanti * 1.5;
+            }
+
+            Console.WriteLine($"VALOR R$: {total.ToString("f2", CultureInfo.InvariantCulture)}");
