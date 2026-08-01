@@ -233,6 +233,7 @@ Console.WriteLine($"O JOGO DUROU {duracao} HORA(s)");
     }
 */
 
+/*
 string[] vet = Console.ReadLine().Split(' ');
 
 int Codi = int.Parse(vet[0], CultureInfo.InvariantCulture);
@@ -257,3 +258,27 @@ double total = 0;
             }
 
             Console.WriteLine($"VALOR R$: {total.ToString("f2", CultureInfo.InvariantCulture)}");
+*/
+
+double Intervalo = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+    if(Intervalo < 0.00 || Intervalo > 100.0)
+    {
+        Console.WriteLine("Fora de intervalo");
+    }
+    else if (Intervalo <= 25.0 )
+    {
+        Console.WriteLine("INTERVALO 0.25");
+    }
+    else if (Intervalo <= 50.0)
+    {
+        Console.WriteLine("INTERVALO 25.50");   
+    }
+    else if (Intervalo <= 75.0)
+    {
+        Console.WriteLine("INTERVALO 50,75");
+    }
+    else
+    {
+        Console.WriteLine("Intervalo (75,100]");
+    }
