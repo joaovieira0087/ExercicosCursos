@@ -345,7 +345,7 @@ else if (salario > 3000.00 && salario <= 4500.00)
 else
 {
     double desconto = salario - 4500.00;
-    double total = 180.00 + desconto * 0.28;
+    double total = 350.00 + desconto * 0.28;
     Console.WriteLine($"R${total.ToString("F2", CultureInfo.InvariantCulture)}");
 }
 
