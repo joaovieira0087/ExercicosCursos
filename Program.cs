@@ -394,7 +394,27 @@ while (x != 0 && y != 0) {
 }
 */
 
+int Voto = int.Parse(Console.ReadLine());
 
+int SomaAlcon =0,somaGasolina =0,SomaDiesel =0;
 
+while (Voto != 4 ) {
 
-// teste
+    if (Voto == 1) {
+        SomaAlcon = SomaAlcon + 1;
+    }
+    else if (Voto == 2) {
+        somaGasolina = somaGasolina + 1;
+    }
+    else if (Voto == 3) {
+        SomaDiesel = SomaDiesel + 1;
+    }
+
+    Voto = int.Parse(Console.ReadLine());
+}
+
+Console.WriteLine("MUITO OBRIGADO");
+Console.WriteLine($"Alcool:{SomaAlcon}");
+Console.WriteLine($"Gasolina:{somaGasolina}");
+Console.WriteLine($"Diesel:{SomaDiesel}");
+Console.ReadKey();
