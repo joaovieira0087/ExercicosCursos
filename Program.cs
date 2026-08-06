@@ -322,6 +322,7 @@ else if (x > 0.0 && y < 0.0)
 }
 */
 
+/* IMPOSTO DE RENDA 
 double salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
 if (salario <= 2000.00)
@@ -349,3 +350,17 @@ else
     Console.WriteLine($"R${total.ToString("F2", CultureInfo.InvariantCulture)}");
 }
 
+*/
+
+// EXERCICIO DE REPETIÇÃO COM WHILE
+
+Console.WriteLine("DIGITE SUA SENHA");
+int senha = int.Parse(Console.ReadLine());
+
+while (senha != 2002)
+{
+    Console.WriteLine("Senha Invalida, Tente Novalmente:");
+    senha = int.Parse(Console.ReadLine());
+}
+
+Console.WriteLine("Acesso Permitido");
