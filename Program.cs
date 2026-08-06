@@ -285,6 +285,7 @@ double Intervalo = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture
     }
 */
 
+/*
 string[] vet = Console.ReadLine().Split(' ');
 
 double x = double.Parse(vet[0], CultureInfo.InvariantCulture);
@@ -319,3 +320,32 @@ else if (x > 0.0 && y < 0.0)
 {
     Console.WriteLine("Q4");
 }
+*/
+
+double salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+if (salario <= 2000.00)
+{
+    Console.WriteLine("Isento");
+}
+
+else if (salario > 2000.00 && salario <= 3000.00)
+{
+    double desconto = salario - 2000.00;
+    double total = desconto * 0.08;
+    Console.WriteLine($"R${total.ToString("F2", CultureInfo.InvariantCulture)}");
+}
+else if (salario > 3000.00 && salario <= 4500.00)
+{
+    double desconto = salario - 3000.00;
+    double total = 80.00 + desconto * 0.18;
+    Console.WriteLine($"R${total.ToString("F2", CultureInfo.InvariantCulture)}");
+} 
+
+else
+{
+    double desconto = salario - 4500.00;
+    double total = 180.00 + desconto * 0.28;
+    Console.WriteLine($"R${total.ToString("F2", CultureInfo.InvariantCulture)}");
+}
+
