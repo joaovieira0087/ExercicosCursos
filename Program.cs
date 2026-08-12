@@ -394,6 +394,7 @@ while (x != 0 && y != 0) {
 }
 */
 
+/*
 int Voto = int.Parse(Console.ReadLine());
 
 int SomaAlcon =0,somaGasolina =0,SomaDiesel =0;
@@ -418,3 +419,14 @@ Console.WriteLine($"Alcool:{SomaAlcon}");
 Console.WriteLine($"Gasolina:{somaGasolina}");
 Console.WriteLine($"Diesel:{SomaDiesel}");
 Console.ReadKey();
+*/
+
+int vezes = int.Parse(Console.ReadLine());
+int soma =0;
+for(int x = 1; x < vezes; x++) {
+    Console.WriteLine($"valor : #{x} ");
+    int valor = int.Parse(Console.ReadLine());
+    soma = soma + valor;
+}
+
+Console.WriteLine($"VALOR FINAL = {soma}");
