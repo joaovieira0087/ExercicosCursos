@@ -432,6 +432,7 @@ for(int x = 1; x < vezes; x++) {
 Console.WriteLine($"VALOR FINAL = {soma}");
 */
 
+/*
 Console.WriteLine("digite um numero");
 int x = int.Parse(Console.ReadLine());
 
@@ -440,3 +441,29 @@ for(int i = 1; i <= x; i++) {
         Console.WriteLine(i);
     }
 }
+*/
+
+/*
+int N = int.Parse(Console.ReadLine());
+int ContadorDentro = 0;
+int fora = 0;
+
+
+for(int i = 1; i <= N; i++)
+{
+    int num = int.Parse(Console.ReadLine());
+    if (num >= 10 && num <= 20)
+    {
+        ContadorDentro++;
+    }
+    else
+    {
+        fora++;
+    }
+
+    
+}
+Console.WriteLine($"{ContadorDentro} in");
+Console.WriteLine($"{fora} out");
+Console.ReadKey();
+*/
