@@ -420,7 +420,7 @@ Console.WriteLine($"Gasolina:{somaGasolina}");
 Console.WriteLine($"Diesel:{SomaDiesel}");
 Console.ReadKey();
 */
-
+/*
 int vezes = int.Parse(Console.ReadLine());
 int soma =0;
 for(int x = 1; x < vezes; x++) {
@@ -430,3 +430,13 @@ for(int x = 1; x < vezes; x++) {
 }
 
 Console.WriteLine($"VALOR FINAL = {soma}");
+*/
+
+Console.WriteLine("digite um numero");
+int x = int.Parse(Console.ReadLine());
+
+for(int i = 1; i <= x; i++) {
+    if(i % 2 != 0) {
+        Console.WriteLine(i);
+    }
+}
