@@ -468,6 +468,7 @@ Console.WriteLine($"{fora} out");
 Console.ReadKey();
 */
 
+/*
 int veses = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
 
@@ -483,3 +484,26 @@ for (int i = 1; i <= veses; i++)
     Console.WriteLine(soma.ToString("F1", CultureInfo.InvariantCulture));
     Console.ReadKey();
 }
+*/
+
+/*
+int n = int.Parse(Console.ReadLine());
+
+for (int i = 0; i < n; i++)
+{
+
+    string[] line = Console.ReadLine().Split(' ');
+    int x = int.Parse(line[0]);
+    int y = int.Parse(line[1]);
+
+    if (y == 0)
+    {
+        Console.WriteLine("divisao impossivel");
+    }
+    else
+    {
+        double div = (double)x / y;
+        Console.WriteLine(div.ToString("F1", CultureInfo.InvariantCulture));
+    }
+}
+*/
