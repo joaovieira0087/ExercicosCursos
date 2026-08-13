@@ -522,15 +522,35 @@ for(int i = 1; i <= x; i++)
 Console.ReadKey();
 */
 
-int Valor = 1;
-int Total = 0;
+double xA, XB, xC, yA, yB, Yc;
 
-int x = int.Parse(Console.ReadLine());
+Console.WriteLine("ENTRE COMAS MEDIDAS DO TRIÂNGULO X");
+xA = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+XB = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+xC = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-for(int i = Valor - 1; i <= 1; i--) {
-     Total = Valor * i;
-    
+
+Console.WriteLine("ENTRE COMAS MEDIDAS TRIÂNGULO Y");
+yA = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+yB = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+Yc = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+double p = (xA + XB + xC) / 2.0;
+double AreaX = Math.Sqrt(p * (p - xA) * (p - XB) * (p - xC));
+
+ p = (yA + yB + Yc) / 2.0;
+ double AreaY = Math.Sqrt(p * (p - yA) * (p - yB) * (p - Yc));
+
+ Console.WriteLine($"AREA DO X {AreaX.ToString("F4", CultureInfo.InvariantCulture)}");
+ Console.WriteLine($"AREA DO Y {AreaY.ToString("F4", CultureInfo.InvariantCulture)}");
+
+if (AreaX > AreaY)
+{
+    Console.WriteLine("maior area do x");
+}
+else
+{
+    Console.WriteLine("maior area do y");
 }
 
-Console.WriteLine(Total);
-Console.ReadKey();
+
