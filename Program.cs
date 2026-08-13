@@ -508,7 +508,7 @@ for (int i = 0; i < n; i++)
 }
 */
 
-
+/*
 int x = int.Parse(Console.ReadLine());
 
 for(int i = 1; i <= x; i++)
@@ -519,4 +519,18 @@ for(int i = 1; i <= x; i++)
         Console.WriteLine(i);
     }
 }
+Console.ReadKey();
+*/
+
+int Valor = 1;
+int Total = 0;
+
+int x = int.Parse(Console.ReadLine());
+
+for(int i = Valor - 1; i <= 1; i--) {
+     Total = Valor * i;
+    
+}
+
+Console.WriteLine(Total);
 Console.ReadKey();
