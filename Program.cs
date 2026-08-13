@@ -467,3 +467,19 @@ Console.WriteLine($"{ContadorDentro} in");
 Console.WriteLine($"{fora} out");
 Console.ReadKey();
 */
+
+int veses = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+
+for (int i = 1; i <= veses; i++)
+{
+    string[] vet = Console.ReadLine().Split(' ');
+
+    double n1 = double.Parse(vet[0], CultureInfo.InvariantCulture);
+    double n2 = double.Parse(vet[1], CultureInfo.InvariantCulture);
+    double n3 = double.Parse(vet[2], CultureInfo.InvariantCulture);
+    double soma = (n1 * 2.0 + n2 * 3.0 + n3 * 5.0) / 10;
+
+    Console.WriteLine(soma.ToString("F1", CultureInfo.InvariantCulture));
+    Console.ReadKey();
+}
