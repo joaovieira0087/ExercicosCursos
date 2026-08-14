@@ -522,24 +522,28 @@ for(int i = 1; i <= x; i++)
 Console.ReadKey();
 */
 
-double xA, XB, xC, yA, yB, Yc;
+/*
+Triangulo x, y; 
+
+x = new Triangulo();
+y = new Triangulo();
 
 Console.WriteLine("ENTRE COMAS MEDIDAS DO TRIÂNGULO X");
-xA = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-XB = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-xC = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+ x.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+ x.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+ x.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
 
 Console.WriteLine("ENTRE COMAS MEDIDAS TRIÂNGULO Y");
-yA = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-yB = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-Yc = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+ y.A= double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+ y.B= double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+ y.C= double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-double p = (xA + XB + xC) / 2.0;
-double AreaX = Math.Sqrt(p * (p - xA) * (p - XB) * (p - xC));
+double p = (x.A + x.B + x.C) / 2.0;
+double AreaX = Math.Sqrt(p * (p - x.A) * (p - x.B) * (p - x.C));
 
- p = (yA + yB + Yc) / 2.0;
- double AreaY = Math.Sqrt(p * (p - yA) * (p - yB) * (p - Yc));
+ p = (y.A + y.B + y.C) / 2.0;
+ double AreaY = Math.Sqrt(p * (p - y.A) * (p - y.B) * (p - y.C));
 
  Console.WriteLine($"AREA DO X {AreaX.ToString("F4", CultureInfo.InvariantCulture)}");
  Console.WriteLine($"AREA DO Y {AreaY.ToString("F4", CultureInfo.InvariantCulture)}");
@@ -552,5 +556,7 @@ else
 {
     Console.WriteLine("maior area do y");
 }
+*/
+
 
 
