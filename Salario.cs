@@ -1,8 +1,8 @@
 using System.Globalization;
 using System;
 
-public class Informacoes
+public class Salario
 {
     public string Nome;
-    public int Idade;
+    public double ValorGanho;
 }

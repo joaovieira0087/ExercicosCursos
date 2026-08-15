@@ -558,5 +558,49 @@ else
 }
 */
 
+/*
+Informacoes Pessoa1, Pessoa2;
 
+Pessoa1 = new Informacoes();
+Pessoa2 = new Informacoes();
 
+Pessoa1.Nome = Console.ReadLine();
+Pessoa1.Idade = int.Parse(Console.ReadLine());
+
+Pessoa2.Nome = Console.ReadLine();
+Pessoa2.Idade = int.Parse(Console.ReadLine());
+
+Console.WriteLine($"Nome: {Pessoa1.Nome}");
+Console.WriteLine($"idade: {Pessoa1.Idade}");
+Console.WriteLine($"Nome: {Pessoa2.Nome}");
+Console.WriteLine($"idade: {Pessoa2.Idade}");
+
+if(Pessoa1.Idade > Pessoa2.Idade)
+{
+    Console.WriteLine("PESSOA 1 E MAIS VELHA");
+}
+else
+{
+    Console.WriteLine("PESSOA 2 E MAIS VELHA");
+}
+*/
+
+Salario Pessoa1, Pessoa2;
+
+Pessoa1 = new Salario();
+Pessoa2 = new Salario();
+
+Pessoa1.Nome = Console.ReadLine();
+Pessoa1.ValorGanho = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+Pessoa2.Nome = Console.ReadLine();
+Pessoa2.ValorGanho = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+Console.WriteLine($"Nome: {Pessoa1.Nome}");
+Console.WriteLine($"salario: {Pessoa1.ValorGanho.ToString("F2", CultureInfo.InvariantCulture)}");
+Console.WriteLine($"Nome: {Pessoa2.Nome}");
+Console.WriteLine($"salario: {Pessoa2.ValorGanho.ToString("F2", CultureInfo.InvariantCulture)}");
+
+double soma = (Pessoa1.ValorGanho + Pessoa2.ValorGanho) / 2;
+
+Console.WriteLine($"Salario base: {soma.ToString("F2", CultureInfo.InvariantCulture)}");
