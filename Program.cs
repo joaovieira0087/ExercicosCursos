@@ -522,7 +522,7 @@ for(int i = 1; i <= x; i++)
 Console.ReadKey();
 */
 
-/*
+
 Triangulo x, y; 
 
 x = new Triangulo();
@@ -539,24 +539,21 @@ Console.WriteLine("ENTRE COMAS MEDIDAS TRIÂNGULO Y");
  y.B= double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
  y.C= double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-double p = (x.A + x.B + x.C) / 2.0;
-double AreaX = Math.Sqrt(p * (p - x.A) * (p - x.B) * (p - x.C));
+ double areaX = x.Area();
+ double areaY = y.Area();
 
- p = (y.A + y.B + y.C) / 2.0;
- double AreaY = Math.Sqrt(p * (p - y.A) * (p - y.B) * (p - y.C));
+ Console.WriteLine($"AREA DO X {areaX.ToString("F4", CultureInfo.InvariantCulture)}");
+ Console.WriteLine($"AREA DO Y {areaY.ToString("F4", CultureInfo.InvariantCulture)}");
 
- Console.WriteLine($"AREA DO X {AreaX.ToString("F4", CultureInfo.InvariantCulture)}");
- Console.WriteLine($"AREA DO Y {AreaY.ToString("F4", CultureInfo.InvariantCulture)}");
-
-if (AreaX > AreaY)
+if (areaX > areaY)
 {
-    Console.WriteLine("maior area do x");
+    Console.WriteLine("maior area do X");
 }
 else
 {
-    Console.WriteLine("maior area do y");
+    Console.WriteLine("maior area do Y");
 }
-*/
+
 
 /*
 Informacoes Pessoa1, Pessoa2;
