@@ -11,5 +11,5 @@ Console.Write("Preco do Produto: ");
 p.Preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 Console.Write("Quantidade no estoque: ");
 p.Quantidade = int.Parse(Console.ReadLine());
-Console.WriteLine(p.Nome);
+Console.WriteLine(p);
 
