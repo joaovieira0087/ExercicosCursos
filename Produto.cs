@@ -9,6 +9,14 @@ class Produto {
         return Preco * Quantidade;
     }
 
+    public void AdicionarProdutos(int quantidade) {
+        Quantidade = Quantidade + quantidade;
+    }
+
+     public void RemoverProduto(int quantidade) {
+        Quantidade = Quantidade - quantidade;
+    }
+
     public override string ToString()
     {
         return Nome 
@@ -19,4 +27,6 @@ class Produto {
         + " Unidades, Total: $ "
         + ValorTotalEmEstoque().ToString("F2", CultureInfo.InvariantCulture);
     }
+
+
 }
