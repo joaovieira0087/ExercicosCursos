@@ -1,21 +1,18 @@
 ﻿using System.Globalization;
 
-AreaTriangulo p = new AreaTriangulo();
+AumentoSalario Salario = new AumentoSalario();
 
-
-Console.Write("Entre os dados");
-Console.WriteLine();
-Console.Write("Largura: ");
-p.Largura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-Console.Write("Altura: ");
-p.Altura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-Console.WriteLine();
-double Total = p.AreaTotalTriangu();
-double Perimetro = p.Perimetro();
-double Diagonal = p.Diagonal();
-Console.WriteLine($"AREA = {Total.ToString("F2", CultureInfo.InvariantCulture)}");
-Console.WriteLine($"PERÍMETRO = {Perimetro.ToString("F2", CultureInfo.InvariantCulture)}");
-Console.WriteLine($"DIAGONAL = {Diagonal.ToString("F2", CultureInfo.InvariantCulture)}");
-
+Console.Write("Nome: ");
+Salario.Nome = Console.ReadLine();
+Console.Write("Salario: ");
+Salario.ClienteSalario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+Console.Write("Imposto: ");
+Salario.Imposto = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+double SemImposto = Salario.SalarioLiquido();
+Console.WriteLine($"Funcionário: {Salario.Nome} ${SemImposto.ToString("F2", CultureInfo.InvariantCulture)}");
+Console.Write("Digite a porcentagem para aumentar o salário:");
+double AumentoSalario =  double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+Salario.AumentarSalario(AumentoSalario);
+Console.WriteLine($"Dados atualizados: {Salario.Nome}, $ {Salario.SalarioLiquido().ToString("F2", CultureInfo.InvariantCulture)}");
 
 
