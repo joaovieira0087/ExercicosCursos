@@ -4,19 +4,19 @@ Aluno aluno = new Aluno();
 
 Console.Write("Nome: ");
 aluno.AlunoNome = Console.ReadLine();
-Console.Write("Digite as três notas do aluno: ");
+Console.WriteLine("Digite as três notas do aluno: ");
 aluno.Nota1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 aluno.Nota2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 aluno.Nota3 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-double NotaFInal = aluno.NotaFinalAluno();
-Console.WriteLine($"NOTA FINAL = {NotaFInal.ToString("F2", CultureInfo.InvariantCulture)}");
-string Decisao = aluno.NotaAlunoDecisao(NotaFInal);
-Console.WriteLine(Decisao);
+Console.WriteLine($"NOTA FINAL = {aluno.NotaFinalAluno().ToString("F2", CultureInfo.InvariantCulture)}");
 
-if (NotaFInal < 60) {
-    double Faltam = aluno.Restante(NotaFInal);
-    Console.WriteLine($"FALTARAM {Faltam.ToString("F2", CultureInfo.InvariantCulture)} PONTOS");
-}
+    if (aluno.NotaAlunoDecisao()) {
+        Console.WriteLine("APROVADO");
+    }
+    else {
+        Console.WriteLine("REPROVADO");
+        Console.WriteLine($"FALTARAM {aluno.Restante().ToString("F2", CultureInfo.InvariantCulture)}");
+    }
 
 
 

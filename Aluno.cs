@@ -8,16 +8,17 @@ class Aluno {
         return Nota1 + Nota2 + Nota3;
     }
 
-    public string NotaAlunoDecisao(double notafinal) {
-        if(notafinal >= 60) {
-            return "APROVADO";
-        } 
+    public bool NotaAlunoDecisao() {
+        if(NotaFinalAluno() >= 60.0) {
+            return true;
+        }
         else {
-            return "REPROVADO";
+            return false;
         }
     }
+        
 
-    public double Restante(double notarestante) {
-        return 60 - notarestante;
+    public double Restante() {
+        return 60.0 - NotaFinalAluno();
     }
 }
