@@ -1,31 +1,21 @@
-﻿
-using System.Globalization;
+﻿using System.Globalization;
 
-Produto p = new Produto();
+AreaTriangulo p = new AreaTriangulo();
 
 
-Console.Write("Entre os dados do produto");
-Console.Write("Nome: ");
-p.Nome = Console.ReadLine();
-Console.Write("Preco do Produto: ");
-p.Preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-Console.Write("Quantidade no estoque: ");
-p.Quantidade = int.Parse(Console.ReadLine());
+Console.Write("Entre os dados");
 Console.WriteLine();
-Console.WriteLine(p);
+Console.Write("Largura: ");
+p.Largura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+Console.Write("Altura: ");
+p.Altura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 Console.WriteLine();
+double Total = p.AreaTotalTriangu();
+double Perimetro = p.Perimetro();
+double Diagonal = p.Diagonal();
+Console.WriteLine($"AREA = {Total.ToString("F2", CultureInfo.InvariantCulture)}");
+Console.WriteLine($"PERÍMETRO = {Perimetro.ToString("F2", CultureInfo.InvariantCulture)}");
+Console.WriteLine($"DIAGONAL = {Diagonal.ToString("F2", CultureInfo.InvariantCulture)}");
 
-Console.Write("digite o numero de produtos a ser add: ");
-int qte = int.Parse(Console.ReadLine());
-p.AdicionarProdutos(qte);
-Console.WriteLine();
-Console.WriteLine("Dados Atualizados: " + p );
-Console.WriteLine();
-Console.Write("digite o numero de produtos a ser removido do estoque: ");
-qte = int.Parse(Console.ReadLine());
-p.RemoverProduto(qte);
-Console.WriteLine();
-Console.WriteLine("Dados Atualizados: " + p );
-Console.WriteLine();
 
 
