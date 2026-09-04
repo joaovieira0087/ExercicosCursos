@@ -1,22 +1,17 @@
 ﻿using System.Globalization;
+using System.Net.NetworkInformation;
 
-Aluno aluno = new Aluno();
+namespace ExerciciosPropostos {
+    class Program {
+        static void Main(string[] args) {
+            Console.WriteLine("Entre o valor do raio: ");
+            double raio = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);  
+            double Circ = Calculadora.Circunferencia(raio);
+            double vol = Calculadora.Volume(raio);
 
-Console.Write("Nome: ");
-aluno.AlunoNome = Console.ReadLine();
-Console.WriteLine("Digite as três notas do aluno: ");
-aluno.Nota1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-aluno.Nota2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-aluno.Nota3 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-Console.WriteLine($"NOTA FINAL = {aluno.NotaFinalAluno().ToString("F2", CultureInfo.InvariantCulture)}");
-
-    if (aluno.NotaAlunoDecisao()) {
-        Console.WriteLine("APROVADO");
+            Console.WriteLine($"Circunferencia {Circ.ToString("F2", CultureInfo.InvariantCulture)}");
+            Console.WriteLine($"Volume {vol.ToString("F2", CultureInfo.InvariantCulture)}");
+            Console.WriteLine($"Valor de PI {Calculadora.Pi.ToString("F2", CultureInfo.InvariantCulture)}");
+        } 
     }
-    else {
-        Console.WriteLine("REPROVADO");
-        Console.WriteLine($"FALTARAM {aluno.Restante().ToString("F2", CultureInfo.InvariantCulture)}");
-    }
-
-
-
+}
