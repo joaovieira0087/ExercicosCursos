@@ -7,16 +7,15 @@ public class Produto {
     public int Quantidade;
     public double Preco;
 
-    public Produto(string nome, int quantidade, double preco) {
-        Nome = nome;
-        Quantidade = quantidade;
-        Preco = preco;
+    public Produto(int quantidade)
+    {
+        Quantidade = quantidade + 10;
     }
 
-    public Produto(string nome, double preco) {
+    
+    public Produto(string nome, double preco, int quantidade) : this(quantidade) {
         Nome = nome;
         Preco = preco;
-        Quantidade = 5;
     }
 
     public double ValorTotalEmEstoque() {

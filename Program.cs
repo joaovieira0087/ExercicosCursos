@@ -13,7 +13,7 @@ namespace ExerciciosPropostos {
             Console.WriteLine("Preco");
             double Preco = double.Parse(Console.ReadLine());
 
-            Produto p = new Produto(Nome, Preco);
+            Produto p = new Produto(Nome, Preco, Quantidade);
 
             Console.WriteLine();
             Console.WriteLine("Dados do produto: " + p);
