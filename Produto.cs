@@ -1,9 +1,23 @@
 using System.Globalization;
+using System.Net.NetworkInformation;
+using System;
 
-class Produto {
+public class Produto {
     public string Nome;
     public int Quantidade;
     public double Preco;
+
+    public Produto(string nome, int quantidade, double preco) {
+        Nome = nome;
+        Quantidade = quantidade;
+        Preco = preco;
+    }
+
+    public Produto(string nome, double preco) {
+        Nome = nome;
+        Preco = preco;
+        Quantidade = 5;
+    }
 
     public double ValorTotalEmEstoque() {
         return Preco * Quantidade;
