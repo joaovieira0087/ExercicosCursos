@@ -9,21 +9,21 @@ namespace ExerciciosPropostos {
         static void Main(string[] args) {
             int N = int.Parse(Console.ReadLine());
 
-            double[] vect = new double(N);
+            double[] vect = new double[N];
 
-            for(int i; i < N; i++)
+            for(int i = 0; i < N; i++)
             {
                 vect[i] = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             }
 
             double sum = 0.0;
-            for(int i; i < N; i++)
+            for(int i = 0; i < N; i++)
             {
                 sum = sum + vect[i];
             }
 
             double total = sum / N;
-            Console.WriteLine(total.ToString("F2"), CultureInfo.InvariantCulture);
+            Console.WriteLine(total.ToString("F2", CultureInfo.InvariantCulture));
         } 
     }
 }
