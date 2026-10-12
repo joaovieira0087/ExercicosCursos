@@ -9,21 +9,23 @@ namespace ExerciciosPropostos {
         static void Main(string[] args) {
             int N = int.Parse(Console.ReadLine());
 
-            double[] vect = new double[N];
+            ProdutoVetores[] vect = new ProdutoVetores[N];
 
             for(int i = 0; i < N; i++)
             {
-                vect[i] = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                string name = Console.ReadLine();
+                double preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                vect[i] = new ProdutoVetores {Nome = name, Preco = preco};
             }
 
-            double sum = 0.0;
-            for(int i = 0; i < N; i++)
+            double som = 0;
+            for (int i = 0; i < N; i++)
             {
-                sum = sum + vect[i];
+                som = som + vect[i].Preco;
             }
 
-            double total = sum / N;
-            Console.WriteLine(total.ToString("F2", CultureInfo.InvariantCulture));
+            double total = som / N;
+            Console.WriteLine(total.ToString("F3", CultureInfo.InvariantCulture));
         } 
     }
 }
