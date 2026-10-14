@@ -24,13 +24,18 @@ namespace ExerciciosPropostos
                 string Motorista = Console.ReadLine();
                 Console.Write("Vaga:");
                 int Vaga = int.Parse(Console.ReadLine());
-
-                estc[Vaga] = new Estacionamento(Placa, Motorista);
+                if(Vaga < 0 || Vaga >= estc.Length)
+                {
+                    Console.WriteLine("não existe essa vaga");
+                }
+                else
+                {
+                    estc[Vaga] = new Estacionamento(Placa, Motorista);
+                    Console.WriteLine();
+                    Console.WriteLine("Quartos ocupados:");
+                }
             }
-
-            Console.WriteLine();
-            Console.WriteLine("Quartos ocupados:");
-
+            
             for(int i = 0; i < estc.Length; i++)
             {
                 if(estc[i] != null)
