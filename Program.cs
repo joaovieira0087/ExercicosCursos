@@ -10,28 +10,32 @@ namespace ExerciciosPropostos
     {
         static void Main(string[] args)
         {
-            Hotel[] vect = new Hotel[10];
-            Console.Write("Quantos quartos serão alugados? ");
-            int n = int.Parse(Console.ReadLine());
-            for (int i = 1; i <= n; i++)
+            Estacionamento[] estc = new Estacionamento[9];
+
+            Console.Write("Quantas vagas seram usadas: ");
+            int TotalVagas = int.Parse(Console.ReadLine());
+            
+            for(int i = 0; i < TotalVagas; i++)
             {
-                Console.WriteLine();
-                Console.WriteLine($"Aluguel #{i}:");
-                Console.Write("Nome: ");
-                string nome = Console.ReadLine();
-                Console.Write("Email: ");
-                string email = Console.ReadLine();
-                Console.Write("Quarto: ");
-                int quarto = int.Parse(Console.ReadLine());
-                vect[quarto] = new Hotel(nome, email);
+                Console.WriteLine($"Carro: #{i+1}");
+                Console.Write("Placa:");
+                string Placa = Console.ReadLine();
+                Console.Write("Motorista:");
+                string Motorista = Console.ReadLine();
+                Console.Write("Vaga:");
+                int Vaga = int.Parse(Console.ReadLine());
+
+                estc[Vaga] = new Estacionamento(Placa, Motorista);
             }
+
             Console.WriteLine();
             Console.WriteLine("Quartos ocupados:");
-            for (int i = 0; i < 10; i++)
+
+            for(int i = 0; i < estc.Length; i++)
             {
-                if (vect[i] != null)
+                if(estc[i] != null)
                 {
-                    Console.WriteLine(i + ": " + vect[i]);
+                    Console.WriteLine(i + ": " + estc[i]);
                 }
             }
         }
