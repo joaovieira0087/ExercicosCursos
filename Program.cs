@@ -10,39 +10,20 @@ namespace ExerciciosPropostos
     {
         static void Main(string[] args)
         {
-            Estacionamento[] estc = new Estacionamento[9];
+            string[] vet = ["maria", "pedro", "ana"];
 
-            Console.Write("Quantas vagas seram usadas: ");
-            int TotalVagas = int.Parse(Console.ReadLine());
-            
-            for(int i = 0; i < TotalVagas; i++)
+            for(int i =0; i < vet.Length; i++)
             {
-                Console.WriteLine($"Carro: #{i+1}");
-                Console.Write("Placa:");
-                string Placa = Console.ReadLine();
-                Console.Write("Motorista:");
-                string Motorista = Console.ReadLine();
-                Console.Write("Vaga:");
-                int Vaga = int.Parse(Console.ReadLine());
-                if(Vaga < 0 || Vaga >= estc.Length)
-                {
-                    Console.WriteLine("não existe essa vaga");
-                }
-                else
-                {
-                    estc[Vaga] = new Estacionamento(Placa, Motorista);
-                    Console.WriteLine();
-                    Console.WriteLine("Quartos ocupados:");
-                }
+                Console.WriteLine(vet[i]);
             }
-            
-            for(int i = 0; i < estc.Length; i++)
+
+            foreach(string obj in vet)
             {
-                if(estc[i] != null)
-                {
-                    Console.WriteLine(i + ": " + estc[i]);
-                }
+                Console.WriteLine(obj);
             }
+
+
+            Console.ReadKey();
         }
     }
 }
